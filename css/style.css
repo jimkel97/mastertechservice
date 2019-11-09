@@ -21,8 +21,7 @@ body {
 .box2 {
 	height: 100vh;
 	width: 100vw;
-	background-image: url(http://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1920x1234.png);
-	background-size: cover;
+	background-color: #4d75b3;
 	background-position: center;
 	display: table;
 	background-attachment: fixed;
@@ -52,12 +51,13 @@ body {
 }
 
 /* The grid container */
-.grid-header {
+.grid {
 	display: grid;
 	align-items: center;
 	grid-template-columns: 645px 75px 75px 75px;
 	grid-template-areas: 
-	'image link1 link2 link3';
+	'image link1 link2 link3'
+	'text1 text1 text1 text1';
 	/* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
@@ -65,6 +65,7 @@ body {
 .link1,
 .link2,
 .link3,
+.text1,
 {
 	padding: 10px;
 }
@@ -84,15 +85,32 @@ body {
 .link3 {
 	grid-area: link3;
 }
+.text1{
+	grid-area: text1;
+	text-align: center;
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-	.grid-header {
+	.grid {
 		grid-template-areas: 
 		'image'
 		'link1'
 		'link2'
 		'link3';
 	}
+}
+
+mark {
+	background: red;
+	color: white;
+}
+a[href^="tel:"] {
+	/* color: orange; */
+	text-decoration: none;
+}
+a[href^="tel:"]:before {
+	content: "\260e";
+	margin-right: 0.5em;
 }
