@@ -56,7 +56,7 @@ body {
 .image-header,
 .links-header,
 .text-header,
-.sec2
+.section2
 {
 	padding: 10px;
 }
@@ -75,7 +75,7 @@ body {
 	grid-area: text-header;
 	text-align: center;
 }
-.sec2 {
+.section2 {
 	grid-area: sec2;
 	height: 100vh;
 	background-color: #4d75b3;
