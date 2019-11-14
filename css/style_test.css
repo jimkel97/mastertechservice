@@ -56,10 +56,10 @@ a[href^="tel:"]:before {
 .box2 {
 	height: 100vh;
 	/* background-color: #4d75b3; */
-	background-image: url(../images/man-and-woman-wearing-black-and-white-striped-aprons-2696064.jpg);
+	background-image: url(../images/man-and-woman-wearing-black-and-white-striped-aprons-2696064-blue.jpg);
 	background-size: cover;
 	background-position: center;
-	background-position: center;
+	background-attachment: fixed;
 	display: table;
 	color: white;
 }
