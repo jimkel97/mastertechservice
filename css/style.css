@@ -7,10 +7,6 @@ body {
 	font-size: 26px;
 	font-family: 'Noto Sans', sans-serif;
 }
-mark {
-	background: red;
-	color: white;
-}
 a[href^="tel:"] {
 	/* color: orange; */
 	text-decoration: none;
@@ -18,6 +14,22 @@ a[href^="tel:"] {
 a[href^="tel:"]:before {
 	content: "\260e";
 	margin-right: 0.5em;
+}
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+.emergency {
+	background: red;
+	color: white;
+}
+.phone {
+	background: #366193;
+	color: white;
+}
+.centervert {
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
 }
 .header {
 	height: auto;
@@ -42,13 +54,16 @@ a[href^="tel:"]:before {
 	background-attachment: fixed;
 }
 .boxtext {
-	margin: 10%;
+	margin: 8%;
 	color: white;
 }
 .box2 {
 	height: 100vh;
-	background-color: #4d75b3;
+	/* background-color: #4d75b3; */
+	background-image: url(../images/man-and-woman-wearing-black-and-white-striped-aprons-2696064-blue.jpg);
+	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	display: table;
 	color: white;
 }
@@ -70,14 +85,17 @@ a[href^="tel:"]:before {
 	display: table;
 	background-attachment: fixed;
 }
-/* The grid container */
+
+/*       */
+/* GRIDS */
+/*       */
+
+/* The header grid container */
 .grid-header {
 	display: grid;
 	align-items: center;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas: 
-	'image       image       links       .....'
-	'text-header text-header text-header text-header';
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
 }
 .image-header,
 .links-header,
@@ -86,71 +104,75 @@ a[href^="tel:"]:before {
 	padding: 10px;
 }
 
-/* Style the image column */
 .image-header {
-	grid-area: image;
 	text-align: center;
 }
 
-/* Style the links column */
 .links-header {
-	grid-area: links;
 }
 .text-header{
-	grid-area: text-header;
 	text-align: center;
+	grid-column-start:1;
+	grid-column-end:3;
 }
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 1319px) {
-	.grid-header {
-		grid-template-areas: 
-		'image   image   ...   ...'
-		'links   ...   ...   ...'
-		'text-header text-header text-header text-header';
+@media (max-width: 900px) {
+	.image-header {
+		grid-column-start:1;
+		grid-column-end:3;
+	}
+	.links-header {
+		grid-column-start:1;
+		grid-column-end:3;
 	}
 }
+
+/* The box2 content grid container */
+.grid-box2cont {
+	display: grid;
+	grid-template-areas: 'auto auto';
+	grid-gap: 5%;
+}
+@media (max-width: 900px) {
+	.box2-text {
+		grid-column-start:1;
+		grid-column-end:3;
+	}
+	#box2image {
+		visibility: hidden;
+	}
+}
+
+/* The footer grid container */
 .grid-footer {
 	display: grid;
 	align-items: center;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas: 
-	'image       image       links       .....'
-	'text-footer text-footer text-footer text-footer';
-	/* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+}
 .image-footer,
 .links-footer,
 .text-footer,
 {
 	padding: 10px;
 }
-
-/* Style the image column */
 .image-footer {
-	grid-area: image;
 	text-align: center;
 }
-
-/* Style the links column */
 .links-footer {
-	grid-area: links;
 }
 .text-footer {
-	grid-area: text-footer;
 	text-align: center;
+	grid-column-start:1;
+	grid-column-end:3;
 }
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 1319px) {
-	.grid-footer {
-		grid-template-areas: 
-		'image'
-		'links'
-		'text-footer';
+@media (max-width: 900px) {
+	.image-footer {
+		grid-column-start:1;
+		grid-column-end:3;
+	}
+	.links-footer {
+		grid-column-start:1;
+		grid-column-end:3;
 	}
 }
 
