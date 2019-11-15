@@ -15,6 +15,10 @@ a[href^="tel:"]:before {
 	content: "\260e";
 	margin-right: 0.5em;
 }
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
 .emergency {
 	background: red;
 	color: white;
@@ -82,7 +86,10 @@ a[href^="tel:"]:before {
 	background-attachment: fixed;
 }
 
+/*       */
 /* GRIDS */
+/*       */
+
 /* The header grid container */
 .grid-header {
 	display: grid;
@@ -123,7 +130,16 @@ a[href^="tel:"]:before {
 .grid-box2cont {
 	display: grid;
 	grid-template-areas: 'auto auto';
-	grid-gap: 10%;
+	grid-gap: 5%;
+}
+@media (max-width: 900px) {
+	.box2-text {
+		grid-column-start:1;
+		grid-column-end:3;
+	}
+	#box2image {
+		visibility: hidden;
+	}
 }
 
 /* The footer grid container */
