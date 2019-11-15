@@ -7,6 +7,14 @@ body {
 	font-size: 26px;
 	font-family: 'Noto Sans', sans-serif;
 }
+a {
+	color: #0000cc;
+	text-decoration: none;
+	hover: #009900;
+}
+a:hover {
+	color: #009900;
+}
 a[href^="tel:"] {
 	/* color: orange; */
 	text-decoration: none;
