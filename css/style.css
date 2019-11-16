@@ -4,7 +4,7 @@
 }
 body {
 	margin: 0;
-	font-size: 26px;
+	font-size: 24px;
 	font-family: 'Noto Sans', sans-serif;
 }
 a {
@@ -169,22 +169,35 @@ a[href^="tel:"]:before {
 /* The box3 content grid container */
 .grid-box3 {
 	display: grid;
-	grid-template-areas: 'text';
+	grid-template-areas: 'texl  texr';
 	grid-gap: 4%;
 	margin: 3%;
 	color: white;
 }
-.box3-text {
-	grid-area: text;
+.box3-text-left {
+	grid-area: texl;
 	margin: 3%;
 	color: white;
 }
-/*@media (max-width: 900px) {
-	.box3-text {
+.box3-text-right {
+	grid-area: texr;
+	margin: 3%;
+	color: white;
+}
+@media (max-width: 900px) {
+.grid-box3 {
+	grid-template-areas: 'texl'
+						 'texr';
+}
+	.box3-text-left {
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}
-}*/
+	.box3-text-right {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
 
 /* The box4 content grid container */
 .grid-box4 {
