@@ -28,6 +28,9 @@ a[href^="tel:"]:before {
 	height: auto;
 	box-shadow: 10px 5px 5px black;
 }
+.hcenter {
+	text-align: center;
+}
 .emergency {
 	background: red;
 	color: white;
@@ -65,7 +68,7 @@ a[href^="tel:"]:before {
 	background-attachment: fixed;
 }
 .boxtext {
-	margin: 8%;
+	margin: 3%;
 	color: white;
 }
 .box2 {
@@ -115,14 +118,7 @@ a[href^="tel:"]:before {
 	padding: 10px;
 }
 
-.image-header {
-	text-align: center;
-}
-
-.links-header {
-}
 .text-header{
-	text-align: center;
 	grid-column-start:1;
 	grid-column-end:3;
 }
@@ -140,10 +136,27 @@ a[href^="tel:"]:before {
 /* The box2 content grid container */
 .grid-box2cont {
 	display: grid;
-	grid-template-areas: 'auto auto';
-	grid-gap: 5%;
+	grid-template-areas: 'head head'
+						 'text imag';
+	grid-gap: 4%;
+	margin: 3%;
+	color: white;
+}
+.box2-head {
+	grid-area: head;
+	text-align: center;
+}
+.box2-text {
+	grid-area: text;
+}
+.box2-image {
+	grid-area: imag;
 }
 @media (max-width: 900px) {
+	.box2-head {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
 	.box2-text {
 		grid-column-start:1;
 		grid-column-end:3;
@@ -152,6 +165,46 @@ a[href^="tel:"]:before {
 		visibility: hidden;
 	}
 }
+
+/* The box3 content grid container */
+.grid-box3 {
+	display: grid;
+	grid-template-areas: 'text';
+	grid-gap: 4%;
+	margin: 3%;
+	color: white;
+}
+.box3-text {
+	grid-area: text;
+	margin: 3%;
+	color: white;
+}
+/*@media (max-width: 900px) {
+	.box3-text {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}*/
+
+/* The box4 content grid container */
+.grid-box4 {
+	display: grid;
+	grid-template-areas: 'text';
+	grid-gap: 4%;
+	margin: 3%;
+	color: white;
+}
+.box4-text {
+	grid-area: text;
+	margin: 3%;
+	color: white;
+}
+/*@media (max-width: 900px) {
+	.box4-text {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}*/
 
 /* The footer grid container */
 .grid-footer {
