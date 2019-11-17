@@ -82,9 +82,10 @@ a[href^="tel:"]:before {
 	color: white;
 }
 .box3 {
-	height: 50vh;
+	height: 100vh;
 	width: 100vw;
-	background-image: url(https://www.incomeactivator.com/images/freebg2.jpg);
+	/* background-image: url(https://www.incomeactivator.com/images/freebg2.jpg); */
+	background-color: white;
 	background-size: cover;
 	background-position: center;
 	display: table;
@@ -126,10 +127,12 @@ a[href^="tel:"]:before {
 	.image-header {
 		grid-column-start:1;
 		grid-column-end:3;
+	grid-gap: 0%;
 	}
 	.links-header {
 		grid-column-start:1;
 		grid-column-end:3;
+	grid-gap: 0%;
 	}
 }
 
@@ -137,7 +140,7 @@ a[href^="tel:"]:before {
 .grid-box2cont {
 	display: grid;
 	grid-template-areas: 'head head'
-						 'text imag';
+	'text imag';
 	grid-gap: 4%;
 	margin: 3%;
 	color: white;
@@ -156,10 +159,12 @@ a[href^="tel:"]:before {
 	.box2-head {
 		grid-column-start: 1;
 		grid-column-end: 3;
+	grid-gap: 0%;
 	}
 	.box2-text {
 		grid-column-start:1;
 		grid-column-end:3;
+	grid-gap: 0%;
 	}
 	#box2image {
 		visibility: hidden;
@@ -169,55 +174,60 @@ a[href^="tel:"]:before {
 /* The box3 content grid container */
 .grid-box3 {
 	display: grid;
-	grid-template-areas: 'texl  texr';
+	grid-template-areas: 'head   head'
+	                     'texl  texr';
 	grid-gap: 4%;
 	margin: 3%;
-	color: white;
+}
+.box3-header {
+	grid-area: head;
 }
 .box3-text-left {
 	grid-area: texl;
-	margin: 3%;
-	color: white;
 }
 .box3-text-right {
 	grid-area: texr;
-	margin: 3%;
-	color: white;
 }
 @media (max-width: 900px) {
-.grid-box3 {
-	grid-template-areas: 'texl'
-						 'texr';
-}
-	.box3-text-left {
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
-	.box3-text-right {
-		grid-column-start: 1;
-		grid-column-end: 3;
+	.grid-box3 {
+		grid-template-areas: 'head'
+		'texl'
+		'texr';
+	grid-gap: 0%;
 	}
 }
 
 /* The box4 content grid container */
 .grid-box4 {
 	display: grid;
-	grid-template-areas: 'text';
+	grid-template-areas: 'head   head'
+			     'coll   colr';
 	grid-gap: 4%;
 	margin: 3%;
 	color: white;
 }
-.box4-text {
-	grid-area: text;
-	margin: 3%;
+.box4-header {
+	grid-area: 'head';
+}
+.box4-column-left {
+	grid-area: coll;
 	color: white;
 }
-/*@media (max-width: 900px) {
-	.box4-text {
-		grid-column-start: 1;
-		grid-column-end: 3;
+.box4-column-right {
+	grid-area: colr;
+	color: white;
+}
+@media (max-width: 900px) {
+	.grid-box4 {
+		display: grid;
+		grid-template-areas: 'head'
+		                     'coll'
+		                     'colr';
+	grid-gap: 0%;
+		margin: 3%;
+		color: white;
 	}
-}*/
+}
 
 /* The footer grid container */
 .grid-footer {
@@ -246,10 +256,12 @@ a[href^="tel:"]:before {
 	.image-footer {
 		grid-column-start:1;
 		grid-column-end:3;
+	grid-gap: 0%;
 	}
 	.links-footer {
 		grid-column-start:1;
 		grid-column-end:3;
+	grid-gap: 0%;
 	}
 }
 
