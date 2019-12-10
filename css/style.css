@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	font-size: 24px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .post p:first-child:first-letter {
 	float: left;
@@ -135,10 +135,18 @@ hr:after {
 	display: table;
 	background-attachment: fixed;
 }
-.box4 {
-	height: 100vh;
+.review1 {
 	width: 100vw;
 	background-image: url(../images/banner-1989514_1920.png);
+	background-size: cover;
+	background-position: center;
+	display: table;
+	background-attachment: fixed;
+}
+.box5 {
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
 	background-size: cover;
 	background-position: center;
 	display: table;
@@ -252,35 +260,44 @@ hr:after {
 	}
 }
 
-/* The box4 content grid container */
-.grid-box4 {
+/* The review1 content grid container */
+.grid-review1 {
+	display: grid;
+	grid-template-areas: 'stuff';
+	grid-gap: 4%;
+	margin: 3%;
+	color: white;
+}
+.review1-text {
+	grid-area: stuff;
+	color: white;
+}
+
+/* The box5 content grid container */
+.grid-box5 {
 	display: grid;
 	grid-template-areas: 'head   head'
 	'coll   colr';
 	grid-gap: 4%;
 	margin: 3%;
-	color: white;
 }
-.box4-header {
-	grid-area: 'head';
+.box5-header {
+	grid-area: head;
 }
-.box4-column-left {
+.box5-column-left {
 	grid-area: coll;
-	color: white;
 }
-.box4-column-right {
+.box5-column-right {
 	grid-area: colr;
-	color: white;
 }
 @media (max-width: 900px) {
-	.grid-box4 {
+	.grid-box5 {
 		display: grid;
 		grid-template-areas: 'head'
 		'coll'
 		'colr';
 		grid-gap: 0%;
 		margin: 3%;
-		color: white;
 	}
 }
 
