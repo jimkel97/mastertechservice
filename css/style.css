@@ -143,6 +143,14 @@ hr:after {
 	display: table;
 	background-attachment: fixed;
 }
+.blurb1 {
+	width: 100vw;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	display: table;
+	background-attachment: fixed;
+}
 .box5 {
 	height: 100vh;
 	width: 100vw;
@@ -271,6 +279,17 @@ hr:after {
 .review1-text {
 	grid-area: stuff;
 	color: white;
+}
+
+/* The blurb1 content grid container */
+.grid-blurb1{
+	display: grid;
+	grid-template-areas: 'stuff';
+	grid-gap: 4%;
+	margin: 3%;
+}
+.blurb1-text {
+	grid-area: stuff;
 }
 
 /* The box5 content grid container */
