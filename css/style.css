@@ -35,18 +35,22 @@ a[href^="tel:"]:before {
 	top: 0; bottom: 0; left: 0; right: 0;
 	margin: auto;
 }
+.quarterwideleft {
+	width: 30%;
+	margin-left: 5%;
+}
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .emergency {
 	background: red;
@@ -57,6 +61,11 @@ a[href^="tel:"]:before {
 .phone {
 	background: #366193;
 	color: white;
+}
+.side {
+	transform: rotate(270deg);
+	margin-top: 200px;
+	width: max-content;
 }
 .header {
 	height: auto;
@@ -153,11 +162,16 @@ a[href^="tel:"]:before {
 /* The box2 content grid container */
 .grid-box2cont {
 	display: grid;
-	grid-template-areas: 'head head'
-	'text imag';
+	grid-template-areas: 'head head head'
+	'side text imag';
 	grid-gap: 4%;
 	margin: 3%;
 	color: white;
+}
+.box2-side {
+	grid-area: side;
+	text-align: center;
+	/*writing-mode: vertical-rl;*/
 }
 .box2-head {
 	grid-area: head;
@@ -175,6 +189,14 @@ a[href^="tel:"]:before {
 		grid-column-end: 3;
 		grid-gap: 0%;
 	}
+	.box2-side {
+		visibility: hidden;
+	}
+	.side {
+		/*transform: rotate(0deg);
+		margin-top: 1px;
+		font-size: 0.75em;*/
+	}
 	.box2-text {
 		grid-column-start:1;
 		grid-column-end:3;
@@ -188,8 +210,8 @@ a[href^="tel:"]:before {
 /* The box3 content grid container */
 .grid-box3 {
 	display: grid;
-	grid-template-areas: 'head   head'
-	'texl  texr';
+	grid-template-areas: 'head   head   head'
+	'texl  vr   texr';
 	grid-gap: 4%;
 	margin: 3%;
 }
@@ -198,6 +220,11 @@ a[href^="tel:"]:before {
 }
 .box3-text-left {
 	grid-area: texl;
+}
+.box3-vr {
+	grid-area: vr;
+	border-left: 3px solid #4aa84e;
+	height: 60%;
 }
 .box3-text-right {
 	grid-area: texr;
@@ -284,7 +311,7 @@ a[href^="tel:"]:before {
 	color:#333;
 	text-decoration:none;
 	font-weight:700;
-	font-size:12px;
+	font-size:15px;
 	line-height:32px;
 	padding:0 15px;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
