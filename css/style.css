@@ -144,6 +144,15 @@ hr:after {
 	display: table;
 	background-attachment: fixed;
 }
+.mission {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../images/banner-1989514_1920.png);
+	background-size: cover;
+	background-position: center;
+	display: table;
+	background-attachment: fixed;
+}
 .review1 {
 	width: 100vw;
 	background-image: url(../images/banner-1989514_1920.png);
@@ -282,6 +291,21 @@ hr:after {
 		'texr';
 		grid-gap: 0%;
 	}
+}
+
+/* The mission content grid container */
+.grid-mission {
+	display: grid;
+	grid-template-areas: 'stuff';
+	grid-gap: 4%;
+	margin: 10%;
+	color: white;
+}
+.mission-text {
+	grid-area: stuff;
+	color: black;
+	background-color: white;
+	padding: 5%;
 }
 
 /* The review1 content grid container */
