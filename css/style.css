@@ -169,17 +169,6 @@ hr:after {
 	display: table;
 	background-attachment: fixed;
 }
-.resume {
-	height: 100vh;
-	width: 100vw;
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 74%, rgba(3,47,130,1) 100%);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	display: table;
-	color: white;
-}
 
 /*       */
 /* GRIDS */
@@ -347,27 +336,7 @@ hr:after {
 	}
 }
 
-/* The resume grid container */
-.grid-resume {
-	display: grid;
-	grid-template-areas: 'resume';
-	margin: 3%
-}
 
-/* The mission grid container */
-.grid-mission {
-	display: grid;
-	grid-template-areas: 'missionl';
-	margin: 3%
-}
-
-/* The benevolence grid container */
-.grid-benevolence{
-	display: grid;
-	grid-template-areas: 'resume'
-	'text imag';
-	margin: 3%
-}
 /* The footer grid container */
 .grid-footer {
 	display: grid;
