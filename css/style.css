@@ -77,7 +77,7 @@ blockquote {
 	padding: 0.25em 40px;
 	line-height: 1.45;
 	position: relative;
-	color: #383838;
+	color: white;
 }
 blockquote:before {
 	display: block;
@@ -86,7 +86,17 @@ blockquote:before {
 	position: absolute;
 	left: -20px;
 	top: -20px;
-	color: #7a7a7a;
+	color: white;
+}
+blockquote:after {
+	font-family: Georgia, sans-serif;
+	display: block;
+	content: "\201D";
+	font-size: 80px;
+	position: absolute;
+	right: 20px;
+	bottom: -60px;
+	color: white;
 }
 blockquote cite {
 	color: #999999;
@@ -255,7 +265,7 @@ blockquote cite:before {
 .box2-side {
 	grid-area: side;
 	text-align: center;
-	/*writing-mode: vertical-rl;*/
+	margin-left: -6em;
 }
 .box2-head {
 	grid-area: head;
@@ -263,6 +273,7 @@ blockquote cite:before {
 }
 .box2-text {
 	grid-area: text;
+	margin-left: -6em;
 }
 .box2-image {
 	grid-area: imag;
@@ -285,6 +296,7 @@ blockquote cite:before {
 		grid-column-start:1;
 		grid-column-end:3;
 		grid-gap: 0%;
+		margin-left: auto;
 	}
 	#box2image {
 		visibility: hidden;
