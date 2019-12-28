@@ -165,7 +165,6 @@ blockquote cite:before {
 .box2 {
 	height: 100vh;
 	width: 100vw;
-	/* background-color: #4d75b3; */
 	background-image: url(../images/man-and-woman-wearing-black-and-white-striped-aprons-2696064-blue.jpg);
 	background-size: cover;
 	background-position: center;
@@ -176,7 +175,6 @@ blockquote cite:before {
 .box3 {
 	height: 100vh;
 	width: 100vw;
-	/* background-image: url(https://www.incomeactivator.com/images/freebg2.jpg); */
 	background-color: white;
 	background-size: cover;
 	background-position: center;
@@ -259,7 +257,7 @@ blockquote cite:before {
 	grid-template-areas: 'head head head'
 	'side text imag';
 	grid-gap: 4%;
-	margin: 3%;
+	/*margin: 3%;*/
 	color: white;
 }
 .box2-side {
@@ -286,11 +284,6 @@ blockquote cite:before {
 	}
 	.box2-side {
 		visibility: hidden;
-	}
-	.side {
-		/*transform: rotate(0deg);
-		margin-top: 1px;
-		font-size: 0.75em;*/
 	}
 	.box2-text {
 		grid-column-start:1;
