@@ -273,25 +273,17 @@ blockquote cite:before {
 	grid-area: text;
 	margin-left: -6em;
 }
-#box2-image {
+.box2-image {
 	grid-area: imag;
 }
 @media (max-width: 900px) {
-	.grid-box2cont {
-		display: grid;
-		grid-template-areas: 'head'
-		'text';
-		grid-gap: 4%;
-		/*margin: 3%;*/
-		color: white;
+	.box2-head {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-gap: 0%;
 	}
 	.box2-side {
 		visibility: hidden;
-	}
-	.box2-head {
-		grid-area: head;
-		text-align: center;
-		grid-gap: 0%;
 	}
 	.box2-text {
 		grid-column-start:1;
