@@ -373,8 +373,9 @@ blockquote cite:before {
 /* The box5 content grid container */
 .grid-box5 {
 	display: grid;
-	grid-template-areas: 'head   head'
-	'coll   colr';
+	grid-template-areas: 'head  head'
+	'coll colr'
+	'colc colc';
 	grid-gap: 4%;
 	margin: 3%;
 }
@@ -387,12 +388,16 @@ blockquote cite:before {
 .box5-column-right {
 	grid-area: colr;
 }
+.box5-column-center{
+	grid-area: colc;
+}
 @media (max-width: 900px) {
 	.grid-box5 {
 		display: grid;
 		grid-template-areas: 'head'
 		'coll'
-		'colr';
+		'colr'
+		'colc';
 		grid-gap: 0%;
 		margin: 3%;
 	}
