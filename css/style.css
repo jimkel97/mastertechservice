@@ -276,7 +276,7 @@ blockquote cite:before {
 @media (max-width: 900px) {
 	.box2-head {
 		grid-column-start: 1;
-		grid-column-end: 3;
+		grid-column-end: 4;
 		grid-gap: 0%;
 	}
 	.box2-side {
@@ -284,7 +284,7 @@ blockquote cite:before {
 	}
 	.box2-text {
 		grid-column-start:1;
-		grid-column-end:3;
+		grid-column-end:4;
 		grid-gap: 0%;
 		margin-left: auto;
 	}
