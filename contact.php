@@ -23,7 +23,7 @@ if($_POST) {
 		$visitor_message = htmlspecialchars($_POST['visitor_message']);
 	}
 
-$recipient = "contact@domain.com";
+$recipient = "jim.brothers@live.com";
 
 	$headers  = 'MIME-Version: 1.0' . "\r\n"
 		.'Content-type: text/html; charset=utf-8' . "\r\n"
