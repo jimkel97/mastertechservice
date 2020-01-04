@@ -5,7 +5,6 @@ if($_POST) {
 	$visitor_email = "";
 	$email_title = "";
 	$visitor_message = "";
-	$recipient = "brothers.jim@gmail.com";
 
 	if(isset($_POST['visitor_name'])) {
 		$visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
@@ -20,10 +19,11 @@ if($_POST) {
 		$email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
 	}
 
-
 	if(isset($_POST['visitor_message'])) {
 		$visitor_message = htmlspecialchars($_POST['visitor_message']);
 	}
+
+$recipient = "contact@domain.com";
 
 	$headers  = 'MIME-Version: 1.0' . "\r\n"
 		.'Content-type: text/html; charset=utf-8' . "\r\n"
