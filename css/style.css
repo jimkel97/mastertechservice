@@ -55,9 +55,9 @@ hr:after {
 	background: radial-gradient(ellipse at top, rgba(0,0,0,0.06) 0%,rgba(0,0,0,0) 70%);
 }
 .img-responsive {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
-	box-shadow: 10px 5px 5px black;
+	box-shadow: 10px 10px 5px black;
 }
 .hcenter {
 	text-align: center;
