@@ -8,6 +8,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #3755B5;
 }
+.red {color: red;}
 .post p:first-child:first-letter {
 	float: left;
 	font-size: 4em;
