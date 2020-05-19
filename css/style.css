@@ -202,16 +202,23 @@ blockquote cite:before {
 }
 .blurb911 {
 	background-color:#cc0000;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-top-color: lightgrey;
+    border-bottom-color: lightgrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
 	width: 100vw;
 	color: white;
 	background-size: cover;
 	background-position: center;
 	display: table;
 	background-attachment: fixed;
+    list-style-position: inside;
 }
 .blurb1 {
 	width: 100vw;
-	background-color: white;
+	background-color: #e6ffff;
 	background-size: cover;
 	background-position: center;
 	display: table;
@@ -314,7 +321,9 @@ blockquote cite:before {
 	grid-template-areas: 'head   head   head'
 	'texl  vr   texr';
 	grid-gap: 4%;
-	margin: 3%;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-bottom: 3%;
 }
 .box3-header {
 	grid-area: head;
@@ -374,7 +383,8 @@ blockquote cite:before {
 	display: grid;
 	grid-template-areas: 'stuff';
 	grid-gap: 4%;
-	margin: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 .blurb1-text {
 	grid-area: stuff;
