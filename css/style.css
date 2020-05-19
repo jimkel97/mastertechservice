@@ -9,6 +9,9 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #3755B5;
 }
+.underline {
+        text-decoration: underline;
+}
 .red {color: red;}
 .margintopshort {
 	margin-top: 5px;
