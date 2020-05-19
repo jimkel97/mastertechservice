@@ -5,10 +5,14 @@
 body {
 	margin: 0;
 	font-size: 24px;
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #3755B5;
 }
 .red {color: red;}
+.margintopshort {
+	margin-top: 5px;
+}
 .post p:first-child:first-letter {
 	float: left;
 	font-size: 4em;
@@ -139,9 +143,9 @@ blockquote cite:before {
 	height: auto;
 	/* padding: 20px; */
 	width: 100vw;
-	/* background-image: url(https://i.ytimg.com/vi/KFNxdXEe0Ko/maxresdefault.jpg); */
+	background-image: url(../images/man-inside-building-2544830_bw.jpg);
 	background-color: white;
-	/* background-size: cover; */
+	background-size: cover;
 	background-position: center;
 	display: table;
 	background-attachment: fixed;
@@ -191,6 +195,15 @@ blockquote cite:before {
 .review1 {
 	width: 100vw;
 	background-image: url(../images/banner-1989514_1920.png);
+	background-size: cover;
+	background-position: center;
+	display: table;
+	background-attachment: fixed;
+}
+.blurb911 {
+	background-color:#cc0000;
+	width: 100vw;
+	color: white;
 	background-size: cover;
 	background-position: center;
 	display: table;
