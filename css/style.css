@@ -134,6 +134,7 @@ blockquote cite:before {
 .emergency {
         background: red;
         color: white;
+        padding-top: 7px;
         padding-left: 7px;
         padding-right: 7px;
 }
