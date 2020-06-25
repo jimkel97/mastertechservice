@@ -295,6 +295,7 @@ blockquote cite:before {
 .box2-head {
 	grid-area: head;
 	text-align: center;
+	font-size: .63em;
 }
 .box2-text {
 	grid-area: text;
