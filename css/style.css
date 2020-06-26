@@ -33,7 +33,7 @@ a:hover {
 	color: #009900;
 }
 a[href^="tel:"] {
-	/* color: orange; */
+	color: #036813;
 	text-decoration: none;
 }
 a[href^="tel:"]:before {
