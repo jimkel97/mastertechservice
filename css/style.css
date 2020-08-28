@@ -9,6 +9,17 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
 	color: #3755B5 !important;
 }
+.slightbig {
+	font-size: 1.1em;
+}
+.rokkitt {
+	font-family: Rokkitt;
+}
+.logoletterbig {
+	font-size: 2.9em;
+	text-shadow: 2px 2px grey;
+	vertical-align: sub;
+}
 .underline {
 	text-decoration: underline;
 }
@@ -366,12 +377,16 @@ blockquote cite:before {
 	grid-gap: 4%;
 	margin: 10%;
 	color: white;
+	border-style: solid;
+	border-width: thin;
+	border-color: #014062;
 }
 .mission-text {
 	grid-area: stuff;
 	color: black;
 	background-color: white;
 	padding: 5%;
+	box-shadow: 10px 10px #014062;
 }
 
 /* The review1 content grid container */
