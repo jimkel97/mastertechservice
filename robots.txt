@@ -1,0 +1,12 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /ACCESSREALTY.COM/
+Disallow: /.git/
+Disallow: /.smileys/
+Disallow: /.easyssl_backup/
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: https://mastertechservice.com/sitemap.xml
