@@ -682,6 +682,15 @@ blockquote cite:before {
 #primary_nav_wrap ul li:hover > ul {
   display: block;
 }
+
+.navbar {
+  justify-content: space-evenly !important;
+}
+
+.navbar-collapse {
+  flex-grow: initial !important;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0,0,0,.9) !important;
 }
