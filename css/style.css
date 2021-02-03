@@ -377,7 +377,7 @@ blockquote cite:before {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-@media (max-width: 900px) {
+@media (max-width: 540px) {
   .image-header {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -681,4 +681,7 @@ blockquote cite:before {
 
 #primary_nav_wrap ul li:hover > ul {
   display: block;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.9) !important;
 }
