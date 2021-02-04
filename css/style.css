@@ -782,4 +782,17 @@ blockquote cite:before {
     width: 100%;
     display: block;
     transition: bottom 0.3s;
+    color: white;
+}
+
+#definition #term {
+    font-size: .8em;
+}
+
+#definition #pronounce {
+    font-size: .7em;
+}
+
+#definition .def {
+    font-size: .6em;
 }

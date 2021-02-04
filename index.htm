@@ -284,8 +284,16 @@
         </div>
     </div>
 </div>
-<div id="definition">
-    <p>All kinds of stuff goes here</p>
+<div id="definition" style="display: flex; justify-content: center;">
+    <div>
+        <p><strong><span id="term">master</span></strong> <span
+                id="pronounce">&lbrack;<strong>mas</strong>-ter, <strong>mah</strong>-ster&rbrack;</span><br>
+            <em><span class="def">adjective</span></em></p>
+        <ol class="def">
+            <li>having or showing very great skill or proficiency.</li>
+            <li>To acquire complete knowledge or skill in (an accomplishment, e.g., a technique, or art).</li>
+        </ol>
+    </div>
 </div>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -303,7 +311,7 @@
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("definition").style.bottom = "0";
         } else {
-            document.getElementById("definition").style.bottom = "-50px";
+            document.getElementById("definition").style.bottom = "-150px";
         }
         prevScrollpos = currentScrollPos;
     }
