@@ -682,3 +682,14 @@ blockquote cite:before {
 #primary_nav_wrap ul li:hover > ul {
   display: block;
 }
+
+/* definition hide section */
+
+#definition {
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  transition: bottom 0.3s;
+}
