@@ -775,24 +775,24 @@ blockquote cite:before {
 
 /* definition hide section */
 
-#definition {
-    background-color: #333;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: block;
-    transition: bottom 0.3s;
-    color: white;
-}
+/*#definition {*/
+/*    background-color: #333;*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*    transition: bottom 0.3s;*/
+/*    color: white;*/
+/*}*/
 
-#definition #term {
-    font-size: .8em;
-}
+/*#definition #term {*/
+/*    font-size: .8em;*/
+/*}*/
 
-#definition #pronounce {
-    font-size: .7em;
-}
+/*#definition #pronounce {*/
+/*    font-size: .7em;*/
+/*}*/
 
-#definition .def {
-    font-size: .6em;
-}
+/*#definition .def {*/
+/*    font-size: .6em;*/
+/*}*/
