@@ -294,7 +294,7 @@ blockquote cite:before {
 }
 
 .emergency {
-    background: red;
+    background-color: #cc0000;
     border-radius: 25px;
     color: white;
     padding-left: 7px;
