@@ -174,10 +174,10 @@ a[href^="tel:"] {
     text-decoration: none;
 }
 
-a[href^="tel:"]:before {
+/*a[href^="tel:"]:before {
     content: "\260e";
     margin-right: 0.5em;
-}
+}*/
 
 hr {
     border: none;
@@ -295,6 +295,7 @@ blockquote cite:before {
 
 .emergency {
     background: red;
+    border-radius: 25px;
     color: white;
     padding-left: 7px;
     padding-right: 7px;
@@ -371,6 +372,16 @@ blockquote cite:before {
     background-attachment: fixed;
 }
 
+.gary {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/mission_blueprint.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
 .review1 {
     width: 100vw;
     background-image: url(../images/banner-1989514_1920.png);
@@ -421,6 +432,8 @@ blockquote cite:before {
 /*       */
 
 /* The header grid container */
+.burger {display: none}
+
 .grid-header {
     display: grid;
     align-items: center;
@@ -445,10 +458,13 @@ blockquote cite:before {
         grid-gap: 0%;
     }
 
+    .burger {display: contents}
+
     .links-header {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-gap: 0%;
+        display: none;
+        /*grid-column-start: 1;*/
+        /*grid-column-end: 3;*/
+        /*grid-gap: 0%;*/
     }
 }
 
@@ -571,6 +587,26 @@ blockquote cite:before {
     box-shadow: 10px 10px #014062;
 }
 
+/* The gary content grid container */
+.grid-gary {
+    display: grid;
+    grid-template-areas: "stuff";
+    grid-gap: 4%;
+    margin: 10%;
+    color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #014062;
+}
+
+.gary-text {
+    grid-area: stuff;
+    color: black;
+    background-color: white;
+    padding: 5%;
+    box-shadow: 10px 10px #014062;
+}
+
 /* The review1 content grid container */
 .grid-review1 {
     display: grid;
@@ -609,6 +645,7 @@ blockquote cite:before {
     font-size: 0.75em;
     font-weight: bold;
     background-color: #cc0000;
+    border-radius: 25px;
     border-top-style: ridge;
     border-bottom-style: ridge;
     border-top-color: lightgrey;

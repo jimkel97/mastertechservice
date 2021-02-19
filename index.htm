@@ -15,17 +15,63 @@
           content="Commercial Kitchen Hood Repair, Walk In Coolers Repair, Commercial Air Conditioning Repair"/>
     <meta name="description"
           content="Master-Tech Service is your one-stop solution to solve your emergency commercial kitchen hood repair needs.  We also specialize in walk in coolers repair and commercial air conditioning repair."/>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
 </head>
 
 <body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
 <div class="header grid-header">
     <div class="image-header hcenter">
-        <div class="slightbig">
-            <p class="rokkitt"><span class="logoletterbig">M</span><span class="logolettersmall">ASTER</span><span
-                    class="red"><span class="logolettersmall">-TEC</span><span class="logoletterbig">H</span></span></p>
-            <p class="logoletterservice">SERVICE</span></p>
-            <p class="logoletterurl">www.MasterTechService.com</span></p>
-        </div>
+        <span class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span><img src="images/logo.png" alt="logo">
     </div>
     <div class="links-header mx-auto">
         <nav class="navbar navbar-expand-sm bg-clear navbar-light" id="primary_nav_wrap">
@@ -51,6 +97,7 @@
                         About Us
                     </a>
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="about.htm#gary">About Gary's Master-Tech</a>
                         <a class="dropdown-item" href="about.htm#resume">Resume</a>
                         <a class="dropdown-item" href="about.htm#mission">Mission</a>
                         <a class="dropdown-item" href="about.htm#benevolence">Benevolence</a>
@@ -63,9 +110,7 @@
         </nav>
     </div>
     <div class="text-header hcenter">
-        <h3>
-            <mark class="emergency">EMERGENCY RESTAURANT HOOD SYSTEM REPAIR</mark>
-        </h3>
+        <h3 class="emergency">EMERGENCY RESTAURANT HOOD SYSTEM REPAIR</h3>
         <h2 class="topphone"><a href="tel:+14077747714" class="tel">407-774-7714</a></h2>
         <div class="grid-blurb911">
             <div class="blurb911-column-left"></div>
@@ -316,7 +361,15 @@
 <!--        prevScrollpos = currentScrollPos;-->
 <!--    }-->
 <!--</script>-->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </body>
 
 </html>
