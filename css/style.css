@@ -432,7 +432,7 @@ blockquote cite:before {
 /*       */
 
 /* The header grid container */
-.burger {display: none}
+.burger {visibility: hidden}
 
 .grid-header {
     display: grid;
@@ -458,7 +458,7 @@ blockquote cite:before {
         grid-gap: 0%;
     }
 
-    .burger {display: contents}
+    .burger {visibility: initial}
 
     .links-header {
         display: none;
