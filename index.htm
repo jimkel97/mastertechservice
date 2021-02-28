@@ -29,9 +29,10 @@
     <a href="about.htm#benevolence">Benevolence</a>
     <a href="contact.htm">Contact</a>
 </div>
-<div style="display: flex; justify-content: space-around">
-    <div><span class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&nbsp;&#9776;</span></div>
-    <div><img src="images/logo.png" alt="logo"></div>
+<div class="flexaround">
+    <div id="burgertopspace"><span class="burger" onclick="openNav()">&nbsp;&#9776;</span>
+    </div>
+    <div><a href="index.htm"><img src="images/logo.png" alt="logo"></a></div>
     <div class="links-header mx-auto">
         <nav class="navbar navbar-expand-sm bg-clear navbar-light" id="primary_nav_wrap">
             <!-- Links -->
@@ -70,43 +71,6 @@
     </div>
 </div>
 <div class="header grid-header">
-<!--        <span class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&nbsp;&#9776;</span><img src="images/logo.png" alt="logo">-->
-<!--    <div class="links-header mx-auto">-->
-<!--        <nav class="navbar navbar-expand-sm bg-clear navbar-light" id="primary_nav_wrap">-->
-<!--            &lt;!&ndash; Links &ndash;&gt;-->
-<!--            <ul class="navbar-nav">-->
-
-<!--                &lt;!&ndash; Dropdown &ndash;&gt;-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="#">Home</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbardrops" data-toggle="dropdown">-->
-<!--                        Services-->
-<!--                    </a>-->
-<!--                    <div class="dropdown-menu">-->
-<!--                        <a class="dropdown-item" href="#box2">Commercial Kitchen Hood Repair</a>-->
-<!--                        <a class="dropdown-item" href="#box3">Walk In Coolers Repair</a>-->
-<!--                        <a class="dropdown-item" href="#box5">Commercial Air Conditioning Repair</a>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbardropa" data-toggle="dropdown">-->
-<!--                        About Us-->
-<!--                    </a>-->
-<!--                    <div class="dropdown-menu">-->
-<!--                        <a class="dropdown-item" href="about.htm#gary">About Gary's Master-Tech</a>-->
-<!--                        <a class="dropdown-item" href="about.htm#resume">Resume</a>-->
-<!--                        <a class="dropdown-item" href="about.htm#mission">Mission</a>-->
-<!--                        <a class="dropdown-item" href="about.htm#benevolence">Benevolence</a>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="contact.htm">Contact Us</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--    </div>-->
     <div class="text-header hcenter">
         <h3 class="emergency">EMERGENCY RESTAURANT HOOD SYSTEM REPAIR</h3>
         <h2 class="topphone"><a href="tel:+14077747714" class="tel">407-774-7714</a></h2>
@@ -119,8 +83,7 @@
                     <li class="font125em">Walk&ndash;in Coolers and Walk&ndash;in Freezers</li>
                     <li class="font125em">Air Conditioning</li>
                 </ul>
-                <p class="fontp6em"><strong>We also offer <span
-                        style="color: #142e80; font-style: italic">anti-viral</span> UV-light air purification systems
+                <p class="fontp6em"><strong>We also offer <span class="blueitalic">anti-viral</span> UV-light air purification systems
                     that kill viruses, old, and bacteria</strong></p>
             </div>
             <div class="blurb911-column-right"></div>
@@ -135,7 +98,7 @@
         <div class="box2-head">
             <a name="box2"></a>
             <h1>Restaurant Hood Repair</h1>
-            <div class="row strongem">
+            <div class="flexaround">
                 <div class="column">
                     <p>Kitchen Hot &amp; Uncomfortable?
                         <br>Hood Exhaust Fan Noisy?
@@ -327,17 +290,17 @@
         </div>
     </div>
 </div>
-<!--<div id="definition" style="display: flex; justify-content: center;">-->
-<!--    <div>-->
-<!--        <p><strong><span id="term">master</span></strong> <span-->
-<!--                id="pronounce">&lbrack;<strong>mas</strong>-ter, <strong>mah</strong>-ster&rbrack;</span><br>-->
-<!--            <em><span class="def">adjective</span></em></p>-->
-<!--        <ol class="def">-->
-<!--            <li>having or showing very great skill or proficiency.</li>-->
-<!--            <li>To acquire complete knowledge or skill in (an accomplishment, e.g., a technique, or art).</li>-->
-<!--        </ol>-->
-<!--    </div>-->
-<!--</div>-->
+<div id="definition" style="display: flex; justify-content: center;">
+    <div>
+        <p><strong><span id="term">master</span></strong> <span
+                id="pronounce">&lbrack;<strong>mas</strong>-ter, <strong>mah</strong>-ster&rbrack;</span><br>
+            <em><span class="def">adjective</span></em></p>
+        <ol class="def">
+            <li>having or showing very great skill or proficiency.</li>
+            <li>To acquire complete knowledge or skill in (an accomplishment, e.g., a technique, or art).</li>
+        </ol>
+    </div>
+</div>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

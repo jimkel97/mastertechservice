@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+.flexaround {
+    display: flex;
+    justify-content: space-around;
+}
+
 body {
     margin: 0;
     font-size: 24px !important;
@@ -88,6 +93,11 @@ h2.topphone {
     font-size: 0.75em;
     font-weight: bold;
     font-style: italic;
+}
+
+.blueitalic {
+    color: #142e80;
+    font-style: italic
 }
 
 .margin1em {
@@ -432,7 +442,16 @@ blockquote cite:before {
 /*       */
 
 /* The header grid container */
-.burger {visibility: hidden}
+.burger {
+    visibility: hidden;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#burgertopspace {
+	margin-top: .75em;
+}
+
 
 .grid-header {
     display: grid;
@@ -584,7 +603,7 @@ blockquote cite:before {
     color: black;
     background-color: white;
     padding: 5%;
-    box-shadow: 10px 10px #014062;
+    box-shadow: 10px 10px 5px #014062;
 }
 
 /* The gary content grid container */
@@ -604,7 +623,7 @@ blockquote cite:before {
     color: black;
     background-color: white;
     padding: 5%;
-    box-shadow: 10px 10px #014062;
+    box-shadow: 10px 10px 5px #130f0f;
 }
 
 /* The review1 content grid container */
@@ -743,6 +762,8 @@ blockquote cite:before {
 }
 
 /* nav menu */
+
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -849,26 +870,26 @@ blockquote cite:before {
     display: block;
 }
 
-/* definition hide section */
+ definition hide section
 
-/*#definition {*/
-/*    background-color: #333;*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    width: 100%;*/
-/*    display: block;*/
-/*    transition: bottom 0.3s;*/
-/*    color: white;*/
-/*}*/
+#definition {
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    transition: bottom 0.3s;
+    color: white;
+}
 
-/*#definition #term {*/
-/*    font-size: .8em;*/
-/*}*/
+#definition #term {
+    font-size: .8em;
+}
 
-/*#definition #pronounce {*/
-/*    font-size: .7em;*/
-/*}*/
+#definition #pronounce {
+    font-size: .7em;
+}
 
-/*#definition .def {*/
-/*    font-size: .6em;*/
-/*}*/
+#definition .def {
+    font-size: .6em;
+}
