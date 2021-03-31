@@ -30,6 +30,10 @@ $blue: #0000ff;
 	display: flex;
 	justify-content: space-around;
 }
+.flexcenter {
+	display: flex;
+	justify-content: space-evenly;
+}
 body {
 	margin: 0;
 	font-size: 24px !important;
