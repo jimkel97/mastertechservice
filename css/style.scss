@@ -26,6 +26,16 @@ $blue: #0000ff;
 * {
 	box-sizing: border-box;
 }
+body {
+	margin: 0;
+	font-size: 24px !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	color: #20326b !important;
+}
+.side-padding {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .flexaround {
 	display: flex;
 	justify-content: space-around;
@@ -33,12 +43,6 @@ $blue: #0000ff;
 .flexcenter {
 	display: flex;
 	justify-content: space-evenly;
-}
-body {
-	margin: 0;
-	font-size: 24px !important;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-	color: #20326b !important;
 }
 .topphone {
 	margin-top: .5em;
