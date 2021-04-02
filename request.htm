@@ -76,7 +76,7 @@
     <br>
     <form action="http://www.mastertechservice.com/contact/process.php" method="post" class="side-padding">
         <input type="hidden" name="form_tools_initialize_form" value="1" />
-        <input type="hidden" name="form_tools_form_id" value="1" />
+        <input type="hidden" name="form_tools_form_id" value="2" />
         <div class="row justify-content-center">
             <div class="col-4">
                 <label for="cname">Company Name:</label><br>
@@ -170,12 +170,12 @@
                 <p>Priority Level:</p>
             </div>
             <div class="col-4">
-                <input type="radio" id="priorityhigh" name="priorityhigh" value="hight">
-                <label for="priorityhigh">High</label><br>
-                <input type="radio" id="prioritymed" name="prioritymed" value="medium">
-                <label for="prioritymed">Medium</label><br>
-                <input type="radio" id="prioritylow" name="prioritylow" value="low">
-                <label for="prioritylow">Low</label><br>
+                <label for="priority">Priority Level:</label>
+                <select id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
             </div>
         </div>
         <div class="text-center">
