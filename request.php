@@ -87,8 +87,6 @@ $api->processFormSubmission($params);
     <h1 class="hcenter">Request Service</h1>
     <br>
         <form method="POST" class="side-padding">
-            <input type="hidden" name="form_tools_initialize_form" value="1" />
-            <input type="hidden" name="form_tools_form_id" value="1" />
         <div class="row justify-content-center">
             <div class="col-4">
                 <label for="cname">Company Name:</label><br>
