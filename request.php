@@ -1,7 +1,7 @@
 <?php
 require_once("contact/global/api/API.class.php");
 $api = new FormTools\API();
-$fields = $api->initFormPage("2", "initialize");
+$fields = $api->initFormPage("1", "initialize");
 $params = array(
     "submit_button" => "submit",
     "next_page" => "request_success.php",
