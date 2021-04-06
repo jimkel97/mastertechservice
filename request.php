@@ -1,3 +1,15 @@
+<?php
+require_once("contact/global/api/API.class.php");
+$api = new FormTools\API();
+$fields = $api->initFormPage("", "test");
+$params = array(
+    "submit_button" => "submit",
+    "next_page" => "request_success.php",
+    "form_data" => $_POST,
+    "finalize" => true
+);
+$api->processFormSubmission($params);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,7 +86,9 @@
     </div>
     <h1 class="hcenter">Request Service</h1>
     <br>
-    <form action="contact.php" method="post" class="side-adding">
+        <form method="POST" class="side-padding">
+            <input type="hidden" name="form_tools_initialize_form" value="1" />
+            <input type="hidden" name="form_tools_form_id" value="1" />
         <div class="row justify-content-center">
             <div class="col-4">
                 <label for="cname">Company Name:</label><br>
@@ -176,7 +190,7 @@
             </div>
         </div>
         <div class="text-center">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" name="submit">
         </div>
     </form>
     <div class="footer grid-footer">
