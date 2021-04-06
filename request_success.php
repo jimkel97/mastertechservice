@@ -1,3 +1,9 @@
+<?php
+require_once("contact/global/api/API.class.php");
+$api = new FormTools\API();
+$fields = $api->initFormPage();
+$api->clearFormSessions();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
