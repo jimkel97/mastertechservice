@@ -1,15 +1,3 @@
-<?php
-require_once("contact/global/api/API.class.php");
-$api = new FormTools\API();
-$fields = $api->initFormPage(1);
-$params = array(
-    "submit_button" => "submit",
-    "next_page" => "request_success.php",
-    "form_data" => $_POST,
-    "finalize" => true
-);
-$api->processFormSubmission($params);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +12,7 @@ $api->processFormSubmission($params);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Commercial Kitchen Hood Repair, Walk In Coolers Repair, Commercial Air Conditioning Repair" />
     <meta name="description" content="Master-Tech Service is your one-stop solution to solve your emergency commercial kitchen hood repair needs.  We also specialize in walk in coolers repair and commercial air conditioning repair." />
+    <meta http-equiv="refresh" content="10; url='https://www.mastertechservice.com'" />
 </head>
 
 <body>
@@ -84,113 +73,11 @@ $api->processFormSubmission($params);
             <p class="red size28">EMERGENCY RESTAURANT HOOD SYSTEM REPAIR</p>
         </div>
     </div>
-    <h1 class="hcenter">Request Service</h1>
-    <br>
-        <form method="POST" class="side-padding">
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="cname">Company Name:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="cname" name="cname"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="siteaddress">Work Site Street Address:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="siteaddress" name="siteaddress"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="city">City:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="city" name="city"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="state">State:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="state" name="state"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="zip">ZIP Code:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="zip" name="zip"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="fname">First Name:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="fname" name="fname"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="lname">Last Name:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="lname" name="lname"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="phone">Phone Number:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="phone" name="phone"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="email">Email Address:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="email" name="email"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="description">Description of Problem:</label><br>
-            </div>
-            <div class="col-4">
-                <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="instructions">Special Instructions:</label><br>
-            </div>
-            <div class="col-4">
-                <input type="text" id="instructions" name="instructions"><br>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <label for="priority">Priority Level:</label>
-            </div>
-            <div class="col-4">
-                <select id="priority" name="priority">
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-            </div>
-        </div>
-        <div class="text-center">
-            <input type="submit" value="Submit" name="submit">
-        </div>
-    </form>
+    <div class="side-padding">
+    <h1>Thank You!</h1>
+    <p>I appreciate that you've taken the time to contact me. You're message has been sent, and I'll get back to you as soon as possible.</p>
+    <p class="hcenter" style="font-size: smaller;"><em>You will be redirected to the homepage momentarily</em></p>
+    </div>
     <div class="footer grid-footer">
         <div class="text-footer">
             <!--<p>footer text goes here</p>-->

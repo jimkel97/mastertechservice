@@ -1,15 +1,3 @@
-<?php
-require_once("contact/global/api/API.class.php");
-$api = new FormTools\API();
-$fields = $api->initFormPage(1);
-$params = array(
-    "submit_button" => "submit",
-    "next_page" => "request_success.php",
-    "form_data" => $_POST,
-    "finalize" => true
-);
-$api->processFormSubmission($params);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,7 +74,11 @@ $api->processFormSubmission($params);
     </div>
     <h1 class="hcenter">Request Service</h1>
     <br>
-        <form method="POST" class="side-padding">
+    <form action="https://formkeep.com/f/276bc0c8ca7b"
+          accept-charset="UTF-8"
+          enctype="multipart/form-data"
+          method="POST">
+        <input type="hidden" name="utf8" value="✓">
         <div class="row justify-content-center">
             <div class="col-4">
                 <label for="cname">Company Name:</label><br>
